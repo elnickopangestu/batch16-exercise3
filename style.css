@@ -1,0 +1,78 @@
+body {
+	padding: 20px;
+	background: black url('https://mi-od-live-s.legocdn.com/r/www/r/catalogs/-/media/catalogs/activities/star%20wars/2016/backgrounds/lsw_activities_backgrounds_starfield_thumbnail.jpg?l.r2=-959143665');
+	color: white;
+	font-family:  Arial;
+	font-size: .9em;
+}
+
+div#content {
+    padding-top: 20px;
+}
+
+div#logo {
+	background:url(https://i.ytimg.com/vi/tGsKzZtRwxw/maxresdefault.jpg) no-repeat;
+	background-size: contain; 
+	height: 55px;
+}
+
+header {
+	text-transform: uppercase; 
+	border-bottom: 2px solid rgba(170, 170, 170, 0.25);
+    border-top: 2px solid rgba(170, 170, 170, 0.25);
+    box-sizing: border-box;
+    padding: 0.65rem 12px 0.4rem;
+}
+
+div.panel {
+	padding: 20px;
+	background-color: #282727;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	opacity: .8;
+}
+
+
+div#characters a {
+	display: block;
+	text-decoration: none;
+	padding: 5px;
+	color: #aaa;
+}
+
+div#characters a.selected {
+	color: #9E4F60;
+}
+
+div#characters a:hover {
+	color: #ffa504;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+th, td {
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	padding: 15px;
+}
+
+th {
+	text-transform: uppercase; 
+	font-weight: normal;
+	text-align:left;
+}
+
+td {
+	color: #aaa;
+}
+
+td:last-child, th:last-child {
+	border-style: none;
+}
+
+td:nth-child(2) {
+	text-align: center;
+}

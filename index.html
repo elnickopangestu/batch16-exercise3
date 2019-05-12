@@ -1,0 +1,36 @@
+<div ng-app='starWars'>
+  <div id='logo'></div>
+  <div id='content'  ng-controller="CharactersController">
+    
+    <header>Please select a character from the list:</header>
+    <div id='characters' class='panel'>
+      <a href ng-repeat="character in characters" ng-click="setCharacter(character)" ng-class="{selected:isSelectedCharacter(character)}">{{character.name}}</a>
+    </div>
+    
+    <div ng-show="selectedCharacter && doneRetrievingFilms">
+    <header>{{selectedCharacter.name}} movie appearances</header>
+      <div id='films' ng-show="films.length" class='panel'>			
+        <table>
+          <tr>
+            <th>Film Title</th>
+            <th>Episode</th>
+            <th>Director</th>
+            <th>Producer</th>
+            <th>Release Date</th>
+          </tr>
+          <tr ng-repeat="film in films | orderBy: '-release_date'">
+            <td>{{film.title}}</td>
+            <td>{{film.episode_id}}</td>
+            <td>{{film.director}}</td>
+            <td>{{film.producer}}</td>
+            <td>{{film.release_date | date : 'fullDate'}}</td>
+          </tr>
+        </table>
+      </div>
+      
+      <div id='nofilms' ng-show="!films.length" class='panel'>
+        No info on {{selectedCharacter.name}} is currently available.
+      </div>
+    </div>
+  </div>
+  </div>
